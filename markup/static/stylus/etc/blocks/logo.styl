@@ -1,0 +1,78 @@
+.logo
+  margin-right 4.5%
+  &--footer
+    margin-right 0
+    margin-bottom 22px
+
+.logo__img-wrap
+  width 100px
+  margin-right 20px
+  
+.logo__text-wrap
+  width 186px
+  
+.logo__title
+  position relative
+  
+  padding-bottom 5px
+  
+  font-size 19px
+  line-height 23px
+  font-weight 700
+  color #3a3a3a
+  &::after
+    content ''
+    
+    position absolute
+    left 0
+    right 0
+    bottom 0
+    
+    height 1px
+    margin auto
+    
+    background-color #c0c0c0
+    
+.logo__text
+  font-size 32px
+  line-height 38px
+  font-weight 700
+  color #ca4b54
+  &--right
+    margin-left 14px
+    
+    line-height 27px
+    
+@media(max-width 1470px)
+  .logo
+    margin-right 1.5%
+    
+@media(max-width 1380px)
+  .logo__img-wrap
+    width 75px
+    margin-right 10px
+  
+  .logo__title
+    font-size: 17px;
+    line-height 20px
+    
+  .logo__text-wrap
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  .logo__text-description-wrap
+    display flex
+  
+  .logo__text
+    font-size 19px
+    line-height 22px
+    &--right
+      margin-left 5px
+      
+@media(max-width 998px)
+  .logo
+    align-self: center;
+    margin-right: 0;
+    margin-bottom: 18px;
+    

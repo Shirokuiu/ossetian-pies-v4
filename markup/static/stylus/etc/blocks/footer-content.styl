@@ -1,0 +1,167 @@
+.footer-content
+  background-image linear-gradient(to top, #f7efe2, #fdf5e7)
+  
+.footer-content__row-top
+  padding 10px 0
+  
+.footer-content__row-top-content
+  padding 0 30px
+  
+.footer-content__block-left
+  padding-top 30px
+  padding-right: 4.5%;
+  padding-bottom 40px
+  
+  border-right 1px solid #d3d3d3
+  
+.footer-content__block-right-nav
+  width 775px
+  margin-left: 4.2%;
+  
+.footer-content__row-bottom
+  margin 0 10px
+  padding 25px 0
+  
+  border-top 1px solid #d3d3d3
+  
+.footer-content__row-bottom-content
+  padding 0 30px
+  
+.footer-content__copyright
+  font-size 16px
+  line-height 19px
+  font-weight 400
+  color #bf404b
+  
+.footer-content__row-bottom-developers
+  &:hover
+    .footer-content__row-bottom-developers-text
+      color #377ad4
+      &::after
+        width 0
+
+        opacity 0
+  
+.footer-content__row-bottom-developers-text
+  position relative
+  
+  padding-bottom 3px
+  
+  font-size 16px
+  line-height 19px
+  font-weight 400
+  color #000000
+  &::after
+    content ''
+    
+    position absolute
+    left 0
+    bottom 0
+    
+    width 100%
+    height 1px
+    
+    background-color #000000
+    
+    opacity 1
+    
+    transition 0.3s ease
+    
+.footer-content__row-bottom-developers-icon
+  width 142px
+  height 40px
+  margin-left 25px
+  
+  background-image url('%=static=%content/developers.png')
+  background-repeat no-repeat
+  background-size 100% auto
+  
+.footer-content__block-right
+  padding-top 30px
+  padding-bottom 13px
+  
+.footer-content__block-right-contacts-headline
+  position relative
+  
+  display inline-block
+  margin-bottom 15px
+  padding-bottom 5px
+  
+  font-size 19px
+  line-height 23px
+  font-weight 700
+  color #3a3a3a
+  &::after
+    content ''
+    
+    position absolute
+    left 0
+    right 0
+    bottom 0
+    
+    height 1px
+    margin auto
+    
+    background-color #fc2b77
+    
+.footer-content__block-right-contacts-link
+  width 80px
+  height 26px
+  margin-bottom 30px
+  
+  background-image url('%=static=%content/footer-payment.png')
+  background-repeat no-repeat
+  background-size 100% auto
+  
+.footer-content__yandex-metrica
+  width 88px
+  height 31px
+  margin-top auto
+  margin-left auto
+  
+  background-image url('%=static=%content/yandex-analytics.jpg')
+  background-repeat no-repeat
+  background-size 100% auto
+  
+@media(max-width 1560px)
+  .footer-content__block-right
+    flex-direction column
+    
+  .footer-content__block-right-nav
+    width auto
+    margin-bottom 25px
+    
+  .footer-content__block-right-contacts
+    margin-left 4.2%
+    
+@media(max-width 998px)
+  .footer-content__block-left
+    display none
+    
+  .footer-content__row-top-content
+    padding 0
+    
+  .footer-content__block-right
+    padding-top 0
+    padding-bottom 0
+    
+  .footer-content__block-right-nav
+    margin-left 0
+    
+  .footer-content__block-right-contacts
+    margin-left 0
+    
+@media(max-width 930px)
+  .footer-content__row-bottom
+    .container
+      padding 0
+  
+  .footer-content__row-bottom-content
+    padding 0
+    
+@media(max-width 800px)
+  .footer-content__row-bottom-content
+    flex-direction column
+  
+  .footer-content__copyright
+    margin-bottom 15px

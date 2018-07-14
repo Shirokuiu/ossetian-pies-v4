@@ -1,0 +1,425 @@
+.user-basket
+  position fixed
+  top 31%
+  right 20px
+  z-index 30
+  &--open
+    top 6.9%
+    right 0
+    bottom: 0;
+    
+    display: flex;
+    flex-direction: column;
+    .user-basket__content
+      flex-grow: 1;
+    .user-basket__description
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 30px;
+      
+      background-color #a42632
+    .user-basket__open-button-arrow
+      transform rotate(0deg) scale(0.7)
+    .user-basket__description-min-title
+      display none
+    .user-basket__description-min-basket-wrap
+      display none
+    .user-basket__description-max-healine
+      display flex
+    .user-basket__order
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    .user-basket__order-total-wrap
+      margin-top: auto;
+
+.user-basket__content
+  box-shadow: -6px 0px 5px -2px rgba(0,0,0,0.3);
+      
+.user-basket__description-max-healine
+  align-items center
+  display none
+  padding 13px 0
+  
+.user-basket__description-max-basket-icon
+  width 32px
+  height 32px
+  margin-right 16px
+  .basket
+    width 32px
+    height 32px
+    
+    fill #ffffff
+    
+.user-basket__description-max-title,
+.user-basket__description-max-title-num,
+.user-basket__description-max-title-goods
+  font-size 19px
+  line-height 23px
+  font-weight 700
+  color #ffffff
+  
+.user-basket__description-max-title-num
+  margin 0 5px
+  
+.user-basket__open-button
+  reset-button()
+  
+  position relative
+  
+  width 30px
+  
+  background-color #a42632
+  &:hover
+    .user-basket__open-button-arrow
+      .arrow
+        fill #FDC92F
+
+.user-basket__open-button-arrow
+  center-absolute()
+  
+  width 24px
+  height 26px
+  
+  transform rotate(180deg) scale(0.7)
+  .arrow
+    display block
+    width 24px
+    height 26px
+    
+    fill #ffffff
+    
+    transition 0.2s ease-in-out
+  
+.user-basket__description
+  background-color #bd414d
+  
+.user-basket__description-min
+  padding 8px 15px
+  
+.user-basket__description-min-title
+  margin-bottom 12px
+  
+  font-size 19px
+  line-height 23px
+  font-weight 700
+  color #ffffff
+  text-align center
+  
+.user-basket__description-min-basket-wrap
+  cursor pointer
+  
+.user-basket__description-min-basket
+  position relative
+  
+  margin-bottom 10px
+  padding-bottom 12px
+  
+  border-bottom 1px solid #ffffff
+  
+.user-basket__description-min-basket-icon
+  width 32px
+  height 32px
+  margin 0 auto
+  .basket
+    width 32px
+    height 32px
+    
+    fill #ffffff
+  
+.user-basket__description-min-basket-indicator
+  position absolute
+  top -3px
+  right 0
+  
+  overflow hidden
+  width 32px
+  height 32px
+  padding-right 1px
+  
+  font-size 17px
+  line-height 35px
+  font-weight 400
+  color #ffffff
+  text-align center
+  
+  background-color #fc644e
+  
+  border-radius 50%
+  
+.user-basket__description-min-total-price-wrap
+  min-width 96px
+  
+.user-basket__description-min-total-price
+  font-size 19px
+  line-height 23px
+  font-weight 700
+  color #ffffff
+  
+.user-basket__description-min-total-price-span
+  margin-top auto
+  margin-left 8px
+  
+  font-size 19px
+  line-height 23px
+  font-weight 400
+  color #ffffff
+  
+.user-basket__order
+  overflow-y scroll
+  box-sizing: border-box;
+  display none
+  width: 545px;
+  padding 0 5px
+  padding-right 23px
+  
+  background-color #f5f5f5
+  
+.user-basket__order-list
+  margin-bottom 20px
+  
+.user-basket__order-items
+  padding 20px 12px
+  
+  border-bottom 1px solid #e9e8e4
+  
+.user-basket__order-item-headline
+  width 192px
+  
+  font-size 15px
+  line-height 18px
+  font-weight 400
+  color #000000
+  
+.user-basket__order-item-weight
+  width 65px
+  
+  font-size 19px
+  line-height 23px
+  font-weight 400
+  color #000000
+  
+.user-basket__order-item-calculating-wrap
+  width 90px
+  margin-right 22px
+  padding 12px 0
+  
+  background-color #ffffff
+  
+.user-basket__order-item-calculating-button
+  reset-button()
+  
+  position relative
+  &::before
+  &::after
+    center-absolute()
+    
+    content ''
+    
+    width 16px
+    height 2px
+    
+    background-color #0f0f0f
+  &::after
+    transform rotate(90deg)
+  &--minus
+    &::after
+      display none
+  
+.user-basket__order-item-calculating-text
+  font-size 19px
+  line-height 23px
+  font-weight 700
+  color #000000
+  
+.user-basket__order-item-total-price-wrap
+  width 106px
+  
+.user-basket__order-item-total-price
+  font-size 21px
+  line-height 25px
+  font-weight 700
+  color #000000
+  
+.user-basket__order-item-total-price-span
+  margin-left 5px
+  
+  font-size 19px
+  line-height 23px
+  font-weight 400
+  color #000000
+  
+.user-basket__order-item-exit
+  reset-button()
+  
+  position relative
+  
+  width 18px
+  height 18px
+  
+  background-color #d3d3d3
+  
+  border-radius 50%
+  
+  transition 0.2s ease
+  
+  exit(70%, 2px, #f5f5f5)
+  &:hover
+    background-color #ff2476
+    
+.user-basket__order-total-wrap
+  margin-right 44px
+  margin-bottom 31px
+  &--hidden
+    display none
+    
+.user-basket__order-total-healine
+  margin-top auto
+  
+  font-size 17px
+  line-height 29px
+  font-weight 700
+  color #000000
+  
+.user-basket__order-total-price-wrap
+  width 135px
+  
+.user-basket__order-total-price-num
+  font-size 24px
+  line-height 29px
+  font-weight 700
+  color #a6242f
+  
+.user-basket__order-total-price-currency
+  margin-top auto
+  margin-left 5px
+  
+  font-size 19px
+  line-height 29px
+  font-weight 400
+  color #a6242f
+  
+.user-basket__order-empty-headline-wrap
+  padding-top 20px
+  padding-bottom 18px
+  &--hidden
+    display none
+  
+.user-basket__order-empty-headline
+  font-size 19px
+  line-height 29px
+  font-weight 400
+  color #000000
+  
+.user-basket__order-input-list-wrap
+  &--hidden
+    display none
+  
+.user-basket__order-input-list
+  margin-bottom 12px
+  padding-left 13px
+  
+.user-basket__order-input-wrap
+  margin-bottom 15px
+  &:last-child
+    margin-bottom 0
+  
+.user-basket__order-input
+  padding: 15px 19px;
+  padding-top: 18px;
+  
+  background-color #ffffff
+  
+  border 1px solid #cbcac6
+  border-radius 5px
+  &--textarea
+    height 100px
+    
+    resize none
+    
+.user-basket__order-submit-button-wrap
+  margin-bottom 21px
+  padding-left 13px
+  
+.user-basket__order-submit-button
+  padding: 13px 5px;
+  
+  font-size 19px
+  line-height 29px
+  font-weight 700
+  color #3a3a3a
+  
+  background-color: #feda5a;
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.1);
+  
+  border-radius: 5px;
+  
+  transition: 0.2s ease;
+  &:hover
+    background-color: #fee881;
+    
+.user-basket__order-rules
+  padding-left 16px
+  padding-bottom 38px
+    
+.user-basket__order-rules-checkbox
+  &:checked + .user-basket__order-rules-label
+    .user-basket__order-rules-label-indicator
+      background-color #d1313d
+      &::before,
+      &::after
+        display block
+    
+.user-basket__order-rules-label
+  position relative
+  
+  display block
+  padding-left 30px
+  
+  font-size 12px
+  line-height 14px
+  font-weight 400
+  color #373535
+  
+  cursor pointer
+  
+.user-basket__order-rules-label-indicator
+  position absolute
+  top 0
+  left 0
+  bottom 0
+  
+  box-sizing border-box
+  display block
+  width 22px
+  height 22px
+  margin auto
+  
+  border 2px solid #d1313d
+  border-radius 3px
+  &::before,
+  &::after
+    center-absolute()
+    
+    content ''
+    
+    left 5px
+    
+    display none
+    width 70%
+    height 2px
+    
+    background-color #ffffff
+  &::before
+    width: 27%;
+    transform: rotate(45deg);
+    right: 0px;
+    bottom: -3px;
+    left: -7px;
+    
+    transform rotate(45deg)
+  &::after
+    transform rotate(-45deg)
+  
+  
+  

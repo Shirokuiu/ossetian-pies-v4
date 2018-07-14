@@ -1,0 +1,144 @@
+.popular-goods
+  margin-bottom 25px
+  padding-top 23px
+  padding-bottom 30px
+  
+  background-color #fffafa
+  
+.popular-goods__headline
+  margin-left: 30px;
+  margin-bottom 23px
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 700;
+  color: #bf404b;
+  
+.popular-goods__slider-wrap
+  max-width 1560px
+  margin 0 auto
+  
+.popular-goods__slider
+  position relative
+  .owl-stage-outer
+    z-index 10 !important
+  .owl-nav
+    position: absolute;
+    top: -90px;
+    left: -98px;
+    right: -98px;
+    bottom: 0;
+    z-index 5 !important
+    margin: auto;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  .owl-prev,
+  .owl-next
+    &:hover
+      background-color transparent !important
+      span
+        &::before,
+        &::after
+          background-color #fc2b77 !important
+    &:focus
+      outline none !important
+    &.disabled
+      &:hover
+        span
+          &::before,
+          &::after
+            background-color #d3d3d3 !important
+    span
+      position relative
+      
+      display block
+      width 36px
+      height 58px
+      
+      font-size 0 !important
+      &::before,
+      &::after
+        center-absolute()
+        
+        content '' !important
+        
+        width 100% !important
+        height 9px !important
+        
+        background-color #d3d3d3 !important
+        
+        transition 0.2s ease !important
+      &::before
+        bottom -20px
+        
+        transform rotate(45deg)
+      &::after
+        bottom 21px
+        
+        transform rotate(-45deg)
+      &:focus
+        outline none !important
+  .owl-next
+    transform rotate(180deg)
+  .owl-dots
+    margin-top 30px
+  .owl-dot
+    span
+      width 10px !important
+      height 10px !important
+
+      background-color #d3d3d3 !important
+
+      border-radius 50%
+      
+      transition 0.2s ease !important
+    &:hover
+      span
+        background-color #fc2b77 !important
+    &:focus
+      outline none
+    &.active
+      span
+        background-color #fc2b77 !important
+        
+@media(max-width 1800px)
+  .popular-goods__slider-wrap
+    width 85%
+    
+@media(max-width 1400px)
+  .popular-goods__slider .owl-nav
+    left -80px
+    right -80px
+    
+@media(max-width 1180px)
+  .popular-goods__slider .owl-nav
+    right -75px
+    
+@media(max-width 1100px)
+  .popular-goods__slider .owl-nav
+    left -70px
+    right -70px
+    
+@media(max-width 1045px)
+  .popular-goods__slider .owl-nav
+    left -65px
+    right -65px
+    
+@media(max-width 1000px)
+  .popular-goods
+    padding-bottom 22px
+    
+  .popular-goods__headline
+    text-align center
+  
+  .popular-goods__slider .owl-dots
+    display none
+    
+  .popular-goods__slider .owl-nav
+    position: static;
+    margin-top: 20px;
+    
+@media(max-width 930px)
+  .popular-goods
+    margin-bottom 0

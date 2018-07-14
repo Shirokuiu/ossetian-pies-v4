@@ -1,0 +1,191 @@
+.discount
+  position relative
+  
+  margin-bottom 25px
+  padding-top 25px
+  
+  background-image url('%=static=%content/discount-bg.jpg')
+  background-repeat no-repeat
+  &::before
+    center-absolute()
+    
+    content ''
+    
+    background-color #FFDEAD
+    
+    opacity 0.9
+  .container
+    position relative
+  
+.discount__content
+  padding-left 8%
+  
+.discount__headline
+  margin-bottom 28px
+  
+  font-size 32px
+  line-height 38px
+  font-weight 700
+  color #ff2476
+  
+.discount__form-submit-wrap
+  margin-bottom 27px
+  
+.discount__input-list
+  width 52.04%
+  margin-right 1.5%
+  
+.discount__input-wrap
+  margin-right 2.8%
+  &:last-child
+    margin-right 0
+  
+.discount__input
+  padding: 15px 19px;
+  padding-top: 18px;
+  
+  background-color #ffffff
+  
+  border 1px solid #cbcac6
+  border-radius 5px
+  
+.discount__form-submit-button
+  reset-button()
+  
+  width 24.71%
+  
+  font-size 19px
+  line-height 23px
+  font-weight 700
+  color #ffffff
+  
+  background-color #fc2b77
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.1)
+  
+  border-radius 5px
+  
+  transition 0.2s ease
+  &:hover
+    background-color #BD414D
+  
+.discount__form-submit-checkbox-list
+  width 1355px
+  padding-left 10px
+  
+.discount__form-submit-checkbox-wrap
+  width 25%
+  margin-bottom 26px
+  
+.discount__form-submit-checkbox
+  &:checked + .discount__form-submit-label
+    .discount__form-submit-label-indicator
+      background-color #fc2c77
+      &::before,
+      &::after
+        display block
+  
+.discount__form-submit-label
+  position relative
+  
+  display block
+  padding-left 30px
+  
+  font-size 19px
+  line-height 22px
+  font-weight 700
+  color #3a3a3a
+  
+  cursor pointer
+  
+.discount__form-submit-label-indicator
+  position absolute
+  top -4px
+  left 0
+  bottom 0
+  
+  box-sizing border-box
+  display block
+  width 22px
+  height 22px
+  margin auto
+  
+  border 2px solid #fc2c77
+  border-radius 3px
+  &::before,
+  &::after
+    center-absolute()
+    
+    content ''
+    
+    left 5px
+    
+    display none
+    width 70%
+    height 2px
+    
+    background-color #fee0b8
+  &::before
+    width: 27%;
+    transform: rotate(45deg);
+    right: 0px;
+    bottom: -3px;
+    left: -7px;
+    
+    transform rotate(45deg)
+  &::after
+    transform rotate(-45deg)
+    
+@media(max-width 1720px)
+  .discount__headline
+    font-size 29px
+    line-height 32px
+    
+@media(max-width 1550px)
+  .discount__content
+    padding-left 3%
+    
+@media(max-width 1440px)
+  .discount__form-submit-checkbox-list
+    width auto
+  
+  .discount__form-submit-checkbox-wrap
+    width 26%
+    
+@media(max-width 1190px)
+  .discount__input-list
+    flex-grow 1
+  
+  .discount__form-submit-checkbox-list
+    padding-left 0
+  
+  .discount__form-submit-checkbox-wrap
+    width 34%
+    
+@media(max-width 930px)
+  .discount
+    margin-bottom 0
+    
+    background-image none
+    
+  .discount__content
+    padding-left 0
+    
+  .discount__headline
+    margin-bottom 15px
+    
+  .discount__form-submit-wrap
+    flex-direction column
+    
+  .discount__input-list
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+    
+  .discount__form-submit-button
+    width: 100%;
+    padding: 13px 5px;
+  
+  .discount__form-submit-checkbox-wrap
+    width 100%
+  
+  

@@ -1,0 +1,111 @@
+// Mixins.
+
+reset()
+  margin 0
+  padding 0
+  
+reset-list()
+  reset()
+  
+  list-style none
+  
+reset-button()
+  reset()
+  
+  background-color transparent
+  
+  border none
+  outline none
+  
+reset-input()
+  reset()
+  reset-button()
+  
+  box-sizing border-box
+  display block
+  width 100%
+  
+center-absolute()
+  position absolute
+  top 0
+  left 0
+  right 0
+  bottom 0
+  
+  margin auto
+  
+exit(width, height, color, rotateB = 45, rotateA = -45)
+  &::before,
+  &::after
+    content ''
+
+    position absolute
+    top 0
+    left 0
+    right 0
+    bottom 0
+
+    width width
+    height height
+    margin auto
+
+    background-color color
+  &::before
+    transform rotate(rotateB deg)
+  &::after
+    transform rotate(rotateA deg)
+    
+hidden()
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+// row
+row()
+  display flex
+row-reverse()
+  flex-direction row-reverse
+row-jc-fs()
+  justify-content flex-start
+row-jc-fe()
+  justify-content flex-end
+row-jc-c()
+  justify-content center
+row-jc-sa()
+  justify-content space-around
+row-jc-sb()
+  justify-content space-between
+row-ai-c()
+  align-items center
+
+// column
+column()
+  flex-direction column
+column-reverse()
+  flex-direction column-reverse
+column-jc-fs()
+  row-jc-fs()
+column-jc-fe()
+  row-jc-fe()
+column-jc-c()
+  row-jc-c()
+column-jc-sa()
+  row-jc-sa()
+column-jc-sb()
+  row-jc-sb()
+column-ai-c()
+  row-ai-c()
+  
+wrap()
+  flex-wrap wrap
+  
+grow()
+  flex-grow 1

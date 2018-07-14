@@ -1,0 +1,331 @@
+.cart
+  width: 23.8%;
+  margin-right: 1.34%;
+  margin-bottom 38px
+  padding-bottom 12px
+  
+  border 1px solid #e9e8e4
+  border-radius 5px
+  &:nth-child(4n)
+    margin-right 0
+  &--slider
+    position relative
+    
+    width auto
+    margin-right 0
+    margin-bottom 0
+    
+    background-color #ffffff
+    .cart__content-list-title
+      align-self flex-end
+      margin 0
+      margin-right 9px
+      
+      font-size 19px
+      line-height 23px
+      font-weight 400
+      color #000000
+    .cart__content-items
+      display flex
+      flex-direction row
+      justify-content space-between
+      padding 0 23px
+      padding-top 10px
+      
+      cursor default
+      &.active
+        background-color transparent
+    .cart__content-item-weight
+      align-self flex-end
+      margin 0
+      padding 0
+      
+      font-size 24px
+      line-height 26px
+      font-weight 400
+      color #000000
+      
+      border-bottom none
+    .cart__content-item-price-wrap
+      margin-left auto
+    .cart__content-item-price
+      align-self flex-end
+      
+      font-size 37px
+      line-height 35px
+      font-weight 700
+      color #000000
+    .cart__content-item-price-span
+      font-size 24px
+      line-height 29px
+      font-weight 400
+      color #000000
+    .cart__content-calculating-number-wrap
+      display none
+    .cart__content-calculating-add
+      width 100%
+      
+.cart__popular-icon
+  position absolute
+  top 20px
+  right 17px
+  
+  display block
+  width 64px
+  height 64px
+  
+  background-image url('%=static=%content/top.svg')
+  background-repeat no-repeat
+  background-size 100% auto
+  
+.cart__img-wrap
+  margin-bottom 9px
+  padding 0 15px
+  padding-top 15px
+  
+.cart__content-title-wrap
+  margin-bottom 8px
+  padding-left 29px
+  
+.cart__content-title
+  margin-bottom 15px
+  
+  font-size 21px
+  line-height 25px
+  font-weight 400
+  color #3a3a3a
+  
+.cart__content-list-title
+  margin-top auto
+  
+  font-size 17px
+  line-height 20px
+  font-weight 400
+  color #bf404b
+  
+.cart__content-list
+  margin 0 8px
+  margin-bottom 16px
+  padding-top 8px
+  
+  border-top 1px solid #e9e8e4
+  
+.cart__content-items
+  margin-right 8px
+  padding 12px 5px
+  
+  background-color #f5f5f5
+  
+  cursor pointer
+  
+  transition 0.2s ease
+  &:hover
+    background-color #feda5a
+  &:last-child
+    margin-right 0
+  &.active
+    background-color #feda5a
+  
+.cart__content-item-weight
+  margin-bottom 13px
+  padding-bottom 12px
+  
+  font-size 19px
+  line-height 23px
+  font-weight 400
+  color #000000
+  
+  border-bottom 1px solid #a9a9a9
+  
+.cart__content-item-price
+  font-size 24px
+  line-height 29px
+  font-weight 700
+  color #000000
+  
+.cart__content-item-price-span
+  margin-top auto
+  margin-left 8px
+  
+  font-size 19px
+  line-height 23px
+  font-weight 400
+  color #000000
+  
+.cart__content-calculating-number-wrap
+  width 205px
+  
+.cart__content-calculating-number-button
+  position relative
+  
+  height 50px
+  &::before
+  &::after
+    center-absolute()
+    
+    content ''
+    
+    width 24px
+    height 2px
+    
+    background-color #0f0f0f
+  &::after
+    transform rotate(90deg)
+  &--minus
+    &::after
+      display none
+      
+.cart__content-calculating-number-text-wrap
+  padding 0 15px
+  
+  background-color #f5f5f5
+  
+.cart__content-calculating-number-text
+  font-size 24px
+  line-height 50px
+  font-weight 700
+  color #000000
+  text-align center
+  
+.cart__content-calculating-number-text-span
+  margin-left 5px
+  
+  font-size 16px
+  line-height 52px
+  font-weight 400
+  color #000000
+  
+.cart__content-calculating-add
+  width 180px
+  padding 0 10px
+  
+.cart__content-calculating-add-button
+  padding 15px 0
+  
+  font-size 19px
+  line-height 23px
+  font-weight 700
+  color #3a3a3a
+  
+  background-color #feda5a
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.1);
+  
+  border-radius 5px
+  
+  transition 0.2s ease
+  &:hover
+    background-color #FEE881
+    
+@media(max-width 1780px)
+  .cart__content-item-weight
+    font-size 15px
+    line-height 18px
+    
+  .cart__content-item-price
+    font-size 18px
+    line-height 21px
+    
+  .cart__content-item-price-span
+    font-size 14px
+    line-height 17px
+    
+@media(max-width 1500px)
+  .cart__content-title-wrap
+    padding 0 10px
+  
+  .cart__content-title
+    font-size 18px
+    line-height 21px
+    
+  .cart__content-calculating-number-wrap
+    width: 100%;
+    
+  .cart__content-calculating-number-button
+    height: 39px;
+    
+  .cart__content-calculating-number-text
+    font-size: 18px;
+    line-height: 43px;
+    
+  .cart__content-calculating-number-text-span
+    font-size: 12px;
+    line-height: 43px;
+    
+  .cart__content-calculating-add
+    width: 100%;
+    padding-left: 0;
+    
+  .cart__content-calculating-number-button::before, .cart__content-calculating-number-button::after
+    width 16px
+    
+  .cart__content-calculating-add-button
+    padding: 10px 0;
+    
+@media(max-width 1460px)
+  .cart
+    width: 32.2%;
+    &:nth-child(3n)
+      margin-right: 0
+    &:nth-child(4n)
+      margin-right: 1.34%;
+    &--slider
+      width auto
+      
+@media(max-width 1300px)
+  .cart--slider .cart__content-items
+    padding: 0 6px;
+    padding-top: 10px;
+    
+  .cart--slider .cart__content-list-title
+    font-size: 17px;
+    line-height 20px
+    
+  .cart--slider .cart__content-item-weight
+    font-size 18px
+    line-height 21px
+    
+  .cart--slider .cart__content-item-price
+    font-size 28px
+    line-height 26px
+    
+  .cart--slider .cart__content-item-price-span
+    font-size 17px
+    line-height 20px
+    
+  .cart__popular-icon
+    width: 38px;
+    height: 38px;
+    top: 10px;
+    right: 7px;
+    
+@media(max-width 1200px)
+  .cart__popular-icon
+    width 46px
+    height 46px
+      
+@media(max-width 1090px)
+  .cart
+    width: 49.1%;
+    &:nth-child(2n)
+      margin-right 0 !important
+    &:nth-child(3n)
+      margin-right: 1.34%;
+    &:nth-child(4n)
+      margin-right: 1.34%;
+    &--slider
+      width auto
+      
+@media(max-width 890px)
+  .cart
+    width: 48.1%;
+    &--slider
+      width auto
+      
+@media(max-width 740px)
+  .cart
+    width: 100%;
+    margin-right 0 !important
+    &--slider
+      width auto
+  
+    
